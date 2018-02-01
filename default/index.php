@@ -1,8 +1,10 @@
 <?php
-include "zoo/cat.php";
-use zoo as z;
+//include "zoo/cat.php";
+//use zoo as z;
+spl_autoload_register(); //remplace les include
+use zoo\Cat;
 
-$mycat = new z\Cat(["white"],"chat orange",true,"Garfield");
+$mycat = new Cat(["white"],"chat orange",true,"Garfield");
 var_dump($mycat);
 echo "<br>";
 $mycat->eat();
