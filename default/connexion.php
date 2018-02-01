@@ -1,6 +1,14 @@
 <?php
-if($_POST["mail"] === "hajer@gmail.com" && $_POST["pwd"] === "pwdd"){
+if(isset($_POST["mail"]) && isset($_POST["pwd"] )){
+
+if($_POST["mail"] === "exemple@gmail.com" && $_POST["pwd"] === "pwdd")
+{
 echo "ok";
-}else {
+} else {
     echo "Not Ok";
+}
+
+}
+else {
+    echo "bien essayé";
 }
